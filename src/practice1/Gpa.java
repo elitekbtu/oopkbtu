@@ -1,3 +1,4 @@
+package practice1;
 import java.util.Scanner;
 
 public class Gpa {
