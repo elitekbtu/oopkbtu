@@ -1,0 +1,82 @@
+public class Program{
+
+    public static void main(String[] args) {
+
+        Person tom = new Person();
+        Person bob = new Person();
+
+        tom.displayId();    // Id = 105
+        bob.displayId();    // Id = 106
+    }
+}
+class Person{
+
+    private int id;
+    static int counter;
+
+    static{
+        counter = 105;
+        System.out.println("Static initializer");
+    }
+    Person(){
+        id=counter++;
+        System.out.println("Constructor");
+    }
+    public void displayId(){
+
+        System.out.printf("Id: %d \n", id);
+    }
+}
+
+public class Program{
+
+    public static void main(String[] args) {
+
+        Person.displayCounter();    // Counter: 1
+
+        Person tom = new Person();
+        Person bob = new Person();
+
+        Person.displayCounter();    // Counter: 3
+    }
+}
+class Person{
+
+    private int id;
+    private static int counter = 1;
+
+    Person(){
+        id = counter++;
+    }
+    // статический метод
+    public static void displayCounter(){
+
+        System.out.printf("Counter: %d \n", counter);
+    }
+    public void displayId(){
+
+        System.out.printf("Id: %d \n", id);
+    }
+}
+
+public class Program{
+
+    public static void main(String[] args) {
+
+        System.out.println(Operation.sum(45, 23));          // 68
+        System.out.println(Operation.subtract(45, 23));     // 22
+        System.out.println(Operation.multiply(4, 23));      // 92
+    }
+}
+class Operation{
+
+    static int sum(int x, int y){
+        return x + y;
+    }
+    static int subtract(int x, int y){
+        return x - y;
+    }
+    static int multiply(int x, int y){
+        return x * y;
+    }
+}
