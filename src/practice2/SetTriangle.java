@@ -4,24 +4,25 @@ import java.util.Scanner;
 
 
 public class SetTriangle {
-    public static void main(String []args){
-        final String pattern = "[*]";
-        String inputText = readInput();
-        int starsValue = Integer.parseInt(inputText);
-        for(int i=1; i<=starsValue; i++){
-            System.out.println(Stars(i, pattern));
-        }
-
-    }
-    public static String readInput() {
+    public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        String inputValue = scanner.nextLine();
-        return inputValue;
+        int lenght = Integer.parseInt(scanner.next());
+        StarTriangle starTriangle = new StarTriangle(lenght);
+        System.out.println(starTriangle.toString());
     }
-    public static String Stars(int length, String pattern){
-        String result = pattern.repeat(length);
+}
+class StarTriangle{
+    private int length;
+    private String pattern = "[*]";
+    private String result="";
+    public StarTriangle(int length){
+        this.length = length;
+    }
+    public String toString(){
+        for(int i=1; i<=length; i++){
+            result += pattern.repeat(i)+'\n';
+        }
         return result;
     }
 
 }
-

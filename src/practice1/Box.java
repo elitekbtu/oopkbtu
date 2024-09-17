@@ -16,8 +16,9 @@ public class Box {
         return inputText;
     }
     public static String MakeBox(String value){
-        System.out.println("+--------+");
+        int lengthName = value.length();
+        System.out.println("+" + "-".repeat(lengthName) + "+");
         System.out.println("|" + value + "|");
-        return "+--------+";
+        return "+" + "-".repeat(lengthName) + "+";
     }
 }

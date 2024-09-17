@@ -3,12 +3,15 @@ package practice2;
 import java.util.Scanner;
 
 public class Student {
-    public static  void main(String []args){
+    public static void main(String []args){
         String Values[] = readInput();
-        StudentData studentData = new StudentData<>(Values[0], Values[1], Values[2]);
+        StudentData studentData = new StudentData(Values[0], Integer.parseInt(Values[1]));
         studentData.changeName("Danial");
         System.out.println(studentData.getID());
-        studentData.changeYearOfStudy("2024");
+        studentData.changeID(12345);
+        System.out.println(studentData.getID());
+        studentData.changeYearOfStudy();
+        studentData.getYearOfStudy();
         System.out.println(studentData.getName());
         System.out.println(studentData.getYearOfStudy());
     }
@@ -20,39 +23,39 @@ public class Student {
     }
 
 }
-class StudentData<NameType, IDType, YearOfStudyType> {
-    private NameType name;
-    private IDType id;
-    private YearOfStudyType yearOfStudy;
+class StudentData {
+    private String name;
+    private int id;
+    private int yearOfStudy;
 
-    public StudentData(NameType name, IDType id, YearOfStudyType yearOfStudy) {
+    public StudentData(String name, int id) {
         this.name = name;
         this.id = id;
-        this.yearOfStudy = yearOfStudy;
+        this.yearOfStudy++;
     }
 
-    public NameType getName() {
+    public String getName() {
         return name;
     }
 
-    public void changeName(NameType newName) {
+    public void changeName(String newName) {
         this.name = newName;
     }
 
-    public IDType getID() {
+    public int getID() {
         return id;
     }
 
-    public void changeID(IDType newID) {
+    public void changeID(int newID) {
         this.id = newID;
     }
 
-    public YearOfStudyType getYearOfStudy() {
+    public int getYearOfStudy() {
         return yearOfStudy;
     }
 
-    public void changeYearOfStudy(YearOfStudyType newYearOfStudy) {
-        this.yearOfStudy = newYearOfStudy;
+    public void changeYearOfStudy() {
+        this.yearOfStudy++;
     }
 }
 
