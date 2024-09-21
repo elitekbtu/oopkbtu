@@ -1,4 +1,4 @@
-package lab1.problem2;
+package lab1.problem3;
 
 public class TemperatureTester {
 
