@@ -1,4 +1,4 @@
-package lab1.problem5;
+package lab1;
 
 public enum Gender {
     BOY,

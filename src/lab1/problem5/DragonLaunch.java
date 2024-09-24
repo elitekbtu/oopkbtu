@@ -1,5 +1,7 @@
 package lab1.problem5;
 
+import lab1.Gender;
+
 import java.util.Vector;
 
 public class DragonLaunch {
