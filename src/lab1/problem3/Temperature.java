@@ -2,12 +2,11 @@ package lab1.problem3;
 public class Temperature {
     private double temperature;
     private char scale;
-// конструктор класса
+
     public Temperature(char scale) {
         this.temperature = 0;
         this.scale = scale;
     }
-// перегрузка метода или перегрузка конструктора
 
     public Temperature(double temperature) {
         this.temperature = temperature;
@@ -17,12 +16,10 @@ public class Temperature {
         this.temperature = temperature;
         this.scale = 'C';
     }
-    // перегрузка метода или перегрузка конструктора
     public Temperature(double temperature, char scale) {
         this.temperature = temperature;
         this.scale = scale;
     }
-//перегрузка коснтуктора или же пустой конструктор
     public Temperature() {
         this.temperature = 0;
         this.scale = 'C';
