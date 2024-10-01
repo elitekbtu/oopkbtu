@@ -34,12 +34,14 @@ class Time{
         }
     }
     public String toUniversal(){
-        return String.format("%02d:%02d:%02d",hour,minute,second);
+        return this.hour+":" + this.minute + ":" + this.second;
     }
     public String toStandard(){
-        String check = (hour < 12) ? "AM":"PM";
-        int standardHour = (hour ==0 || hour == 12) ? 12 : hour % 12;
-        return String.format("%02d:%02d:%02d %s", standardHour, minute, second, check);
+        String result = "";
+        if (this.hour>12){
+            result += this.hour%12+":";
+        }
+        return result + this.minute+ ":" + this.second;
     }
     public void add(Time otherTime) {
         int newSecond = this.second + otherTime.second;

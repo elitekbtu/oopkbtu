@@ -15,20 +15,18 @@ public class DragonLaunch {
 
     public boolean willDragonEatOrNot() {
         int numberOfFreeBoys = 0;
-        for (Person i: students) {
-            if (i.gender == Gender.BOY)
+        for(Person i: students){
+            if(i.gender==Gender.BOY){
                 numberOfFreeBoys++;
-            else if (i.gender == Gender.GIRL && numberOfFreeBoys > 0)
+            }
+            else{
                 numberOfFreeBoys--;
-            else {
-                return true;
             }
         }
-        if (numberOfFreeBoys > 0)
-            return true;
-        else {
+        if (numberOfFreeBoys==0){
             return false;
         }
+        return true;
     }
 
 }
