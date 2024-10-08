@@ -12,15 +12,24 @@ public class Rectangle extends Shape {
 
     @Override
     public void draw(int sizeMultiplier) {
-        for (int i = 0; i < height * sizeMultiplier; i++) {
-            for (int j = 0; j < x; j++) {
-                System.out.print(" ");
-            }
-            if (color == Color.RED) {
-                System.err.println("*".repeat(width * sizeMultiplier));
+        for (int i = 0; i < sizeMultiplier; i++) {
+            if (color == Color.BLACK) {
+                for (int j = 0; j < height; j++) {
+                    for (int k = 0; k < width; k++) {
+                        System.out.print('*');
+                    }
+                    System.out.println();
+                }
             } else {
-                System.out.println("*".repeat(width * sizeMultiplier));
+                for (int j = 0; j < height; j++) {
+                    for (int k = 0; k < width; k++) {
+                        System.err.print('*');
+                    }
+                    System.err.println();
+                }
             }
+            System.err.println('\n');
+            System.out.println('\n');
         }
     }
 }

@@ -16,6 +16,8 @@ public class Triangle extends Shape {
                 System.out.println("/\\");  // Entire shape in black
             else
                 System.err.println("/\\");  // Entire shape in red
+            System.err.println('\n');
+            System.out.println('\n');
         }
     }
 }

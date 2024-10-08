@@ -5,7 +5,7 @@ import java.util.Vector;
 public class ShapeTester {
 
     public static void main(String[] args) {
-        Vector<Shape> shapes = new Vector<Shape>();
+        Vector<Shape> shapes = new Vector<>();
         shapes.add(new Triangle(Shape.Color.BLACK, 2));
         shapes.add(new Circle(Shape.Color.RED, 2, 2));
         shapes.add(new Rectangle(Shape.Color.RED, 1, 5, 3));
@@ -22,7 +22,6 @@ public class ShapeTester {
                 Triangle t = (Triangle) shape;
                 t.draw(3);
             }
-            System.out.println();
         }
     }
 }

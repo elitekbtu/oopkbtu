@@ -11,13 +11,12 @@ public class Circle extends Shape {
     @Override
     public void draw(int number) {
         for (int i = 0; i < number; i++) {
-            for (int j = 0; j < x; j++)
-                System.out.print(" ");
-
             if (color == Color.RED)
                 System.err.println("()");
             else
                 System.out.println("()");
+            System.err.println('\n');
+            System.out.println('\n');
         }
     }
 }
