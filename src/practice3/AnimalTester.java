@@ -8,7 +8,6 @@ public class AnimalTester {
         System.out.println("Age: " + dog.getAge());
         System.out.println("Name: " + dog.getName());
         System.out.println("Breed: " + dog.getBreed());
-
         dog.setGender("Male");
         dog.setAge(5);
         dog.setName("Rex");
