@@ -1,4 +1,4 @@
-package Lab2.problem_b;
+package Lab2.problem2;
 
 public abstract class Piece {
     protected Position position;

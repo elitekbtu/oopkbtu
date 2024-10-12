@@ -1,6 +1,4 @@
-package Lab2.problem3;
-
-import java.util.Objects;
+package Lab2.problem_c;
 
 public class Laptop extends Device {
     private String operationSystem;

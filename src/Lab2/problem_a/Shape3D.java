@@ -1,4 +1,4 @@
-package Lab2.problem1;
+package Lab2.problem_a;
 
 public abstract class Shape3D {
 

@@ -1,8 +1,8 @@
-package Lab2.problem_b;
+package Lab2.problem2;
 
-public class Bishop extends Piece{
+public class King extends Piece{
     private Position position;
-    Bishop(Position position){
+    King(Position position){
         this.position = position;
     }
     public void setPosition(Position position) {
@@ -22,6 +22,7 @@ public class Bishop extends Piece{
         int startY = position.getVertical();
         int targetX = b.getHorizontal();
         int targetY = b.getVertical();
-        return Math.abs(startX - targetX) == Math.abs(startY - targetY);
+
+        return (Math.abs(startX - targetX) <= 1 && Math.abs(startY - targetY) <= 1);
     }
 }

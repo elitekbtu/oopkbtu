@@ -1,4 +1,4 @@
-package Lab2.problem2;
+package Lab2.problem_b;
 
 import java.util.Vector;
 

@@ -1,10 +1,12 @@
-package Lab2.problem_b;
+package Lab2.problem2;
 
-public class King extends Piece{
+public class Knight extends Piece {
     private Position position;
-    King(Position position){
+
+    Knight(Position position) {
         this.position = position;
     }
+
     public void setPosition(Position position) {
         this.position = position;
     }
@@ -18,11 +20,9 @@ public class King extends Piece{
         if (b.getHorizontal() < 'A' || b.getVertical() < 1 || b.getHorizontal() > 'H' || b.getVertical() > 8) {
             return false;
         }
-        int startX = position.getHorizontal();
-        int startY = position.getVertical();
-        int targetX = b.getHorizontal();
-        int targetY = b.getVertical();
+        int deltaX = Math.abs(b.getHorizontal() - position.getHorizontal());
+        int deltaY = Math.abs(b.getVertical() - position.getVertical());
 
-        return (Math.abs(startX - targetX) <= 1 && Math.abs(startY - targetY) <= 1);
+        return (deltaX == 2 && deltaY == 1) || (deltaX == 1 && deltaY == 2);
     }
 }

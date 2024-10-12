@@ -1,4 +1,4 @@
-package Lab2.problem_b;
+package Lab2.problem2;
 
 public class ChessTester {
     public static void main(String[] args) {

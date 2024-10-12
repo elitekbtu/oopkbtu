@@ -1,4 +1,4 @@
-package Lab2.problem_b;
+package Lab2.problem2;
 
 public class Position {
     private final int vertical;

@@ -1,4 +1,4 @@
-package Lab2.problem1;
+package Lab2.problem_a;
 
 import java.util.Vector;
 import java.util.Scanner;

@@ -1,4 +1,4 @@
-package Lab2.problem3;
+package Lab2.problem_c;
 
 public class DeviceTester {
     public static void main(String[] args) {

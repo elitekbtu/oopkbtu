@@ -1,4 +1,4 @@
-package Lab2.problem2;
+package Lab2.problem_b;
 
 public class Book extends LibraryItem {
     private int numberOfPages;

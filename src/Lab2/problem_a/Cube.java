@@ -1,6 +1,4 @@
-package Lab2.problem1;
-
-import java.math.*;
+package Lab2.problem_a;
 
 public class Cube extends Shape3D{
     private double height;
