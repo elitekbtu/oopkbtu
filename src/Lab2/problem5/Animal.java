@@ -17,6 +17,14 @@ public abstract class Animal {
         return age;
     }
 
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
     public abstract void getSound();
 
     @Override
