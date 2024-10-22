@@ -34,5 +34,5 @@ public abstract class LibraryItem {
     }
 
     @Override
-    public abstract String toString();  // Abstract toString method
+    public abstract String toString();
 }
