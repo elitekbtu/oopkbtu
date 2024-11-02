@@ -55,13 +55,19 @@ public class Device {
                 '}';
     }
 
-    @Override
-    public boolean equals(Object obj) {
-        if (!(obj instanceof Device)) return false;
-        Device device = (Device) obj;
-        return this.dram == device.dram && this.memory == device.memory &&
-                this.releaseYear == device.releaseYear && this.memory==device.memory;
-    }
+
+//    public boolean equals(Object obj) {
+//        // if(!this==obj) return false;
+//        // else{
+////        if(obj instanceof Device){
+////        Dedive d = (Device) obj;
+////        this.memory == d.memory && this.dram == d.dram && this.mode == d.model
+////        }
+////        else{
+////            return false;
+////        }
+////    }
+////    }
 
     public int hashCodeCustom() {
         String hashSystem = this.model + this.dram + this.memory + this.releaseYear;
