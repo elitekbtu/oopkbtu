@@ -16,14 +16,10 @@ public class Animal {
     public void breathe(){
         System.out.println(getName()+"is breathing");
     }
-    public void  move(){
+    public void move(){
         System.out.println(getName()+"is moving");
     }
     public void eat(){
         System.out.println(getName()+"is eating");
     }
-
-
-
-
 }

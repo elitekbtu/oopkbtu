@@ -2,7 +2,10 @@ package practice6.classes;
 
 import practice6.interfaces.CanHavePizza;
 
+import java.io.File;
+
 public class Cat extends Animal implements CanHavePizza {
+    File catImage = new File("src/practice6/img/mysyq.txt");
     public Cat(String name) {
         super(name);
     }
