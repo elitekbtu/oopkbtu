@@ -5,16 +5,16 @@ import java.util.List;
 
 public class Tester {
     public static void main(String[] args) {
-        Cat cat = new Cat("Tom");
-        Person p1 = new Person("Max");
-        Student s1 = new Student("Leo");
-        Samsung phone = new Samsung("Galaxy S24", 890000);
+        Cat cat = new Cat("Aqmoiyn");
+        Person p1 = new Person("Ermek");
+        Student s1 = new Student("Danial");
+        Samsung phone = new Samsung("Samsung Galaxy S10", 250000);
         PowerSocket pw = new PowerSocket();
         App app = new App();
         MemoryGame mg = new MemoryGame();
         Logic_Game lg = new Logic_Game();
 
-        Resturant res = new Resturant();
+        Restaurant res = new Restaurant();
         res.servePizza(cat);
         res.servePizza(p1);
         res.servePizza(s1);
@@ -32,10 +32,10 @@ public class Tester {
 
         System.out.println("\nSorting algorithm:");
         List<Student> students = new ArrayList<>();
-        students.add(new Student("Max"));
-        students.add(new Student("Leo"));
-        students.add(new Student("Ray"));
-        students.add(new Student("Jay"));
+        students.add(new Student("Maxim"));
+        students.add(new Student("Leonid"));
+        students.add(new Student("Rayimbek"));
+        students.add(new Student("JayZ"));
 
         System.out.println("List before sorting:");
         for (Student s : students) {
@@ -48,7 +48,6 @@ public class Tester {
         for (Student s : students) {
             System.out.println(s);
         }
-
         app.getStatistics(mg);
         app.getStatistics(lg);
     }

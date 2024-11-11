@@ -1,6 +1,6 @@
 package practice6.interfaces;
 public  interface CanHavePizza {
-    int PizzaSize = 25;
+    int PizzaSize = 6;
     void eatPizza();
 
 }
