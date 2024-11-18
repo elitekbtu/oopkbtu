@@ -33,21 +33,4 @@ public class MyHashSet<T> implements MyCollection<T> {
     public void clear() {
         set.clear();
     }
-    
-    @Override
-    public MyIterator<T> iterator() {
-        return new MyIterator<T>() {
-            private java.util.Iterator<T> iterator = set.iterator();
-            
-            @Override
-            public boolean hasNext() {
-                return iterator.hasNext();
-            }
-            
-            @Override
-            public T next() {
-                return iterator.next();
-            }
-        };
-    }
 }
