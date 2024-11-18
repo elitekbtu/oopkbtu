@@ -11,8 +11,7 @@ public class Manager extends Employee {
         super();
     }
 
-    public Manager(String name, double salary, Date hireDate, String insuranceNumber,
-                   Vector<Employee> team, double bonus) {
+    public Manager(String name, double salary, Date hireDate, String insuranceNumber, Vector<Employee> team, double bonus) {
         super(name, salary, hireDate, insuranceNumber);
         this.team = team;
         this.bonus = bonus;
