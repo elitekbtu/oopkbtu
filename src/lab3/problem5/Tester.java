@@ -10,9 +10,8 @@ public class Tester {
         chocolates[4] = new Chocolate(200, "Merci");
 
         Sort.bubbleSort(chocolates);
-//        Sort.quickSort(chocolates);
 
-        for (Chocolate chocolate: chocolates)
+        for (Chocolate chocolate : chocolates)
             System.out.println(chocolate);
 
         Time[] times = new Time[3];
@@ -20,10 +19,9 @@ public class Tester {
         times[1] = new Time(14, 45, 10);
         times[2] = new Time(10, 32, 40);
 
-//        Sort.bubbleSort(times);
-        Sort.quickSort(times);
+        Sort.selectionSort(times);
 
-        for (Time time: times)
+        for (Time time : times)
             System.out.println(time);
     }
 }

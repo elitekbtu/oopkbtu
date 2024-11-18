@@ -16,27 +16,18 @@ public class Sort {
                     swap(array, i, j);
     }
 
-    static <E extends Comparable<E>> void quickSort(E[] array) {
-        quickSortImplementation(array, 0, array.length - 1);
-    }
-
-    static <E extends Comparable<E>> void quickSortImplementation(E[] array, int l, int r) {
-        if (l < r) {
-            int pivot = partition(array, l, r);
-            quickSortImplementation(array, l, pivot - 1);
-            quickSortImplementation(array, pivot + 1, r);
-        }
-    }
-
-    static <E extends Comparable<E>> int partition(E[] array, int l, int r) {
-        int i = (l - 1);
-        for (int j = l; j <= r - 1; j++) {
-            if (array[j].compareTo(array[r]) < 0) {
-                i++;
-                swap(array, i, j);
+    static <E extends Comparable<E>> void selectionSort(E[] array) {
+        int n = array.length;
+        for (int i = 0; i < n - 1; i++) {
+            int minIndex = i;
+            for (int j = i + 1; j < n; j++) {
+                if (array[j].compareTo(array[minIndex]) < 0) {
+                    minIndex = j;
+                }
+            }
+            if (minIndex != i) {
+                swap(array, i, minIndex);
             }
         }
-        swap(array, i + 1, r);
-        return i + 1;
     }
 }
